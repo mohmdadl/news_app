@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:news_app_ui_setup/widgets/bottom_category.dart';
-import 'package:news_app_ui_setup/widgets/bottom_list.dart';
-import 'package:news_app_ui_setup/widgets/top_list.dart';
+import 'package:news_app_ui_setup/widgets/news_list.dart';
+import 'package:news_app_ui_setup/widgets/categories_list.dart';
 // import 'package:news_app_ui_setup/widgets/top_category.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +20,7 @@ class HomeView extends StatelessWidget {
             Text(
               'Cloud',
               style:
-                  TextStyle(fontWeight: FontWeight.bold, color: Colors.blue),
+                  TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
             ),
           ],
         ),
@@ -31,14 +30,12 @@ class HomeView extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
-            child: TopList(),
+            child: CategoriesList(),
           ),
           const SliverToBoxAdapter(
             child: SizedBox(height: 8),
           ),
-          SliverToBoxAdapter(
-            child: BottomList(),
-          )
+          NewsList()
         ],
       ),
     );

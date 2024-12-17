@@ -51,14 +51,9 @@ class BottomList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      shrinkWrap: true,
-      itemCount: bottomModels.length,
-      itemBuilder: (BuildContext context, int index) {
-        return BottomCategory(
-          bottomModel: bottomModels[index],
-        );
-      },
-    );
+    return SliverList(
+        delegate: SliverChildBuilderDelegate(
+      (context, index) => BottomCategory(bottomModel: bottomModels[index]),
+    ));
   }
 }

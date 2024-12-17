@@ -1,0 +1,66 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter run --machine --start-paused -d edge --devtools-server-address http://127.0.0.1:9100/ --target D:\.Mohamed Adel\flutter course\projects\news_app-main\lib\main.dart
+
+## exception
+
+HttpException: HttpException: Connection closed before full header was received, uri = http://localhost:63199/devtools/page/76C92D7732F535EBC5AA2642D986AA03
+
+```
+```
+
+## flutter doctor
+
+```
+[✓] Flutter (Channel stable, 3.24.5, on Microsoft Windows [Version 10.0.19045.2006], locale ar-EG)
+    • Flutter version 3.24.5 on channel stable at C:\src\flutter
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision dec2ee5c1f (4 weeks ago), 2024-11-13 11:13:06 -0800
+    • Engine revision a18df97ca5
+    • Dart version 3.5.4
+    • DevTools version 2.37.3
+
+[✓] Windows Version (Installed version of Windows is version 10 or higher)
+
+[✗] Android toolchain - develop for Android devices
+    ✗ Unable to locate Android SDK.
+      Install Android Studio from: https://developer.android.com/studio/index.html
+      On first launch it will assist you in installing the Android SDK components.
+      (or visit https://flutter.dev/to/windows-android-setup for detailed instructions).
+      If the Android SDK has been installed to a custom location, please use
+      `flutter config --android-sdk` to update to that location.
+
+
+[✓] Chrome - develop for the web
+    • Chrome at C:\Program Files\Google\Chrome\Application\chrome.exe
+
+[!] Visual Studio - develop Windows apps (Visual Studio Community 2022 17.4.0)
+    • Visual Studio at C:\Program Files\Microsoft Visual Studio\2022\Community
+    • Visual Studio Community 2022 version 17.4.33103.184
+    ✗ Visual Studio is missing necessary components. Please re-run the Visual Studio installer for the "Desktop development with C++" workload, and include these components:
+        MSVC v142 - VS 2019 C++ x64/x86 build tools
+         - If there are multiple build tool versions available, install the latest
+        C++ CMake tools for Windows
+        Windows 10 SDK
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/to/windows-android-setup for detailed instructions).
+
+[✓] VS Code (version 1.86.2)
+    • VS Code at C:\Users\it\AppData\Local\Programs\Microsoft VS Code
+    • Flutter extension version 3.91.20240529
+
+[✓] Connected device (3 available)
+    • Windows (desktop) • windows • windows-x64    • Microsoft Windows [Version 10.0.19045.2006]
+    • Chrome (web)      • chrome  • web-javascript • Google Chrome 131.0.6778.140
+    • Edge (web)        • edge    • web-javascript • Microsoft Edge 92.0.902.67
+
+[✓] Network resources
+    • All expected network resources are available.
+
+! Doctor found issues in 3 categories.
+```

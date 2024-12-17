@@ -1,9 +1,9 @@
-class BottomModel {
-  String bottomImagePath;
-  String bottomMainTitle;
-  String bottomSubTitle;
+class ArticlesModel {
+  String? urlToImage;
+  String ?title;
+  String ?description;
 
-  BottomModel({required this.bottomImagePath,required this.bottomMainTitle,required this.bottomSubTitle});
+  ArticlesModel({required this.urlToImage,required this.title,required this.description});
 
 
 }
