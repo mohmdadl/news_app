@@ -7,19 +7,19 @@ class NewsServices {
   NewsServices({required this.dio});
   Future<List<ArticlesModel>> getNews() async {
     var response = await dio.get(
-      'https://newsapi.org/v2/top-headlines?country=us&apiKey=338042678f3c4ce2a2d347a231ecb7df',
+      'https://newsdata.io/api/1/latest?apikey=pub_62547e85c3399cd9da6c2363e52133af7a760&domain=nytimes,bbc',
     );
 
     Map<String, dynamic> jsondata =
         response.data; //convert response to json data
 
-    List<dynamic> articles = jsondata['articles'];
+    List<dynamic> articles = jsondata['results'];
 
     List<ArticlesModel> articlesModel = [];
 
     for (var article in articles) {
       article = ArticlesModel(
-          urlToImage: article['urlToImage'],
+          urlToImage: article['image_url'],
           title: article['title'],
           description: article['description']);
       articlesModel.add(article);
