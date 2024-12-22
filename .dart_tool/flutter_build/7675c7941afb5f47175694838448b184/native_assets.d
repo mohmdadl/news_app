@@ -1,0 +1,1 @@
+ D:\\Courses\\.FLUTTER\\2.Tharwat\ Samy\\projects\\news_app\\.dart_tool\\flutter_build\\7675c7941afb5f47175694838448b184\\native_assets.yaml: 

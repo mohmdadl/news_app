@@ -1,0 +1,4 @@
+#Sun Dec 22 22:17:11 EET 2024
+base.0=D\:\\Courses\\.FLUTTER\\2.Tharwat Samy\\projects\\news_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
