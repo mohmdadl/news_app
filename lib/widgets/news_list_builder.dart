@@ -11,37 +11,40 @@ class NewsListBuilder extends StatefulWidget {
   State<NewsListBuilder> createState() => _NewsListBuilderState();
 }
 
-List<ArticlesModel> articlesModel = [];
-bool isLoading = true;
-
 class _NewsListBuilderState extends State<NewsListBuilder> {
+  var future;
   @override
   void initState() {
     super.initState();
-    getNews();
-  }
-
-  Future<void> getNews() async {
-    articlesModel = await NewsServices(dio: Dio()).getNews();
-    isLoading = false;
-    setState(() {});
+    future = NewsServices(dio: Dio()).getNews();
   }
 
   @override
   Widget build(BuildContext context) {
-    return articlesModel.isEmpty
-        ? SliverFillRemaining(
-          child: Center(
-            child: Text(
-                'oops! there is a problem right now! \nyou can try at another time.'),
-          ),
-        )
-        : isLoading
-            ? const SliverFillRemaining(
-                child: Center(
-                  child: CircularProgressIndicator(),
-                ),
-              )
-            : NewsList(articlesModel: articlesModel);
+    return FutureBuilder<List<ArticlesModel>>(
+      future: future,
+      builder: ((context, snapshot) {
+        //snapshot دا حاوية بيستقبل فيها
+
+        if (snapshot.hasError) {
+          return const SliverFillRemaining(
+            child: Center(
+              child: Text(
+                  'oops! there is a problem right now! \nyou can try at another time.'),
+            ),
+          );
+        } else {
+          if (snapshot.hasData) {
+            return NewsList(articlesModel: snapshot.data!);
+          } else {
+            return const SliverFillRemaining(
+              child: Center(
+                child: CircularProgressIndicator(),
+              ),
+            );
+          }
+        }
+      }),
+    );
   }
 }
