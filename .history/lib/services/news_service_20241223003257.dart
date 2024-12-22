@@ -8,7 +8,7 @@ class NewsServices {
   Future<List<ArticlesModel>> getNews() async {
     try {
   var response = await dio.get(
-    'https://newsdata.io/api/1/latest?apikey=pub_62547e85c3399cd9da6c2363e521af7a760&domain=nytimes,bbc',
+    'https://newsdata.io/api/1/latest?apikey=pub_62547e85c3399cd9da6c2363e52133af7a760&domain=nytimes,bbc',
   );
   
   Map<String, dynamic> jsondata =
