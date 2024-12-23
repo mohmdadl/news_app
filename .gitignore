@@ -1,0 +1,72 @@
+# Flutter/Dart specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+pubspec.lock
+
+# Generated files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+
+# macOS specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+
+# Android specific
+android/.gradle/
+android/app/build/
+android/local.properties
+android/.idea/
+android/app/.cxx/
+*.jks
+
+# iOS specific
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/App.framework
+ios/Flutter/engine/
+ios/Flutter/Flutter.podspec.lock
+ios/build/
+
+# Linux specific
+linux/flutter/ephemeral/
+linux/build/
+
+# Web specific
+web/manifest.json
+web/.dart_tool/
+
+# Build output
+build/
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+*.lock
+
+# IntelliJ/VSCode IDE specific
+*.idea/
+.vscode/
+*.history/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Firebase/Secrets (if applicable)
+google-services.json
+GoogleService-Info.plist
+.env
+
+# Unit test coverage reports
+coverage/
