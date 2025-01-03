@@ -1,6 +1,6 @@
 class CategoryModel {
-  String topImagePath;
-  String topCategoryTitle;
+  String categoryImagePath;
+  String categoryTitle;
 
-  CategoryModel({required this.topCategoryTitle, required this.topImagePath});
+  CategoryModel({required this.categoryTitle, required this.categoryImagePath});
 }

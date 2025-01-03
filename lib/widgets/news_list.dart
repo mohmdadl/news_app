@@ -5,7 +5,7 @@ import 'package:news_app_ui_setup/widgets/news_widget.dart';
 
 class NewsList extends StatelessWidget {
 
-  List<ArticlesModel> articlesModel;
+  final List<ArticlesModel> articlesModel;
   
   NewsList({required this.articlesModel});
  

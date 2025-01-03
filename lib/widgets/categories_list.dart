@@ -4,34 +4,34 @@ import 'package:news_app_ui_setup/widgets/category_widget.dart';
 
 class CategoriesList extends StatelessWidget {
   CategoriesList({super.key});
-  List<CategoryModel> topModels = [
+  final List<CategoryModel> categoryModels = [
     CategoryModel(
-      topCategoryTitle: 'Business',
-      topImagePath: 'assets/business.jpeg',
+      categoryTitle: 'Business',
+      categoryImagePath: 'assets/business.jpeg',
     ),
     CategoryModel(
-      topCategoryTitle: 'entertainment',
-      topImagePath: 'assets/entertaiment.avif',
+      categoryTitle: 'entertainment',
+      categoryImagePath: 'assets/entertaiment.avif',
     ),
     CategoryModel(
-      topCategoryTitle: 'General',
-      topImagePath: 'assets/general.jpeg',
+      categoryTitle: 'General',
+      categoryImagePath: 'assets/general.jpeg',
     ),
     CategoryModel(
-      topCategoryTitle: 'Health',
-      topImagePath: 'assets/health.avif',
+      categoryTitle: 'Health',
+      categoryImagePath: 'assets/health.avif',
     ),
     CategoryModel(
-      topCategoryTitle: 'Science',
-      topImagePath: 'assets/science.avif',
+      categoryTitle: 'Science',
+      categoryImagePath: 'assets/science.avif',
     ),
     CategoryModel(
-      topCategoryTitle: 'Sports',
-      topImagePath: 'assets/sport.jpeg',
+      categoryTitle: 'Sports',
+      categoryImagePath: 'assets/sport.jpeg',
     ),
     CategoryModel(
-        topCategoryTitle: 'Technology',
-        topImagePath: 'assets/technology.jpeg'),
+        categoryTitle: 'Technology',
+        categoryImagePath: 'assets/technology.jpeg'),
   ];
 
   @override
@@ -41,10 +41,10 @@ class CategoriesList extends StatelessWidget {
       child: ListView.builder(
         shrinkWrap: true,
         scrollDirection: Axis.horizontal,
-        itemCount: topModels.length,
+        itemCount: categoryModels.length,
         itemBuilder: (BuildContext context, int index) {
           return CategoryWidget(
-            topModel: topModels[index],
+            categoryModel: categoryModels[index],
           );
         },
       ),
