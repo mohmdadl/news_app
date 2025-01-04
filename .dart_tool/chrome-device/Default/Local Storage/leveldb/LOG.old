@@ -1,5 +1,11 @@
-2024/12/07-00:37:09.366 ca0 Reusing MANIFEST C:\Users\Badr\AppData\Local\Temp\flutter_tools.7880e735\flutter_tools_chrome_device.8f38aa48\Default\Local Storage\leveldb/MANIFEST-000001
-2024/12/07-00:37:09.381 ca0 Recovering log #7
-2024/12/07-00:37:09.398 ca0 Reusing old log C:\Users\Badr\AppData\Local\Temp\flutter_tools.7880e735\flutter_tools_chrome_device.8f38aa48\Default\Local Storage\leveldb/000007.log 
-2024/12/07-00:37:09.400 ca0 Delete type=0 #3
-2024/12/07-00:37:09.400 ca0 Delete type=0 #4
+2025/01/04-00:23:47.158 fbc Reusing MANIFEST C:\Users\Badr\AppData\Local\Temp\flutter_tools.f1f28286\flutter_tools_chrome_device.de9d6718\Default\Local Storage\leveldb/MANIFEST-000001
+2025/01/04-00:23:47.166 fbc Recovering log #3
+2025/01/04-00:23:47.167 fbc Recovering log #4
+2025/01/04-00:23:47.168 fbc Level-0 table #4: started
+2025/01/04-00:23:47.177 fbc Level-0 table #4: 30400 bytes OK
+2025/01/04-00:23:47.180 fbc Recovering log #7
+2025/01/04-00:23:47.185 fbc Reusing old log C:\Users\Badr\AppData\Local\Temp\flutter_tools.f1f28286\flutter_tools_chrome_device.de9d6718\Default\Local Storage\leveldb/000007.log 
+2025/01/04-00:23:47.203 fbc Delete type=0 #3
+2025/01/04-00:23:47.203 fbc Delete type=0 #4
+2025/01/04-00:23:47.203 fbc Delete type=2 #5
+2025/01/04-00:23:47.216 fbc Delete type=2 #8

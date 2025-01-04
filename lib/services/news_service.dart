@@ -18,17 +18,14 @@ class NewsServices {
       List<dynamic> articles = jsondata['articles'];
      
 
-      List<ArticlesModel> articlesModel = [];
+      List<ArticlesModel> articlesList = [];
 
       for (var article in articles) {
-        article = ArticlesModel(
-            urlToImage: article['urlToImage'],
-            title: article['title'],
-            description: article['description']);
-        articlesModel.add(article);
+        ArticlesModel articleModel = ArticlesModel.fomJson(article);
+        articlesList.add(articleModel);
       }
 
-      return articlesModel;
+      return articlesList;
     } catch (e) {
       // Throw an exception to signal the error
       throw Exception('Error fetching news: $e');
