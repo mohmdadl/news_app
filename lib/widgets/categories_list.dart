@@ -40,6 +40,15 @@ class CategoriesList extends StatelessWidget {
       height: 85,
       child: ListView.builder(
         shrinkWrap: true,
+        /*
+        
+        لما تضيف shrinkWrap: true،
+          ListView  الكود بيقول للـ
+          إنه يحدد حجمه بناءً على المحتويات اللي فيه بدل ما يتمدد في كل المساحة المتاحة.
+
+       shrinkWrap: true  ومش محدد أبعادها ممكن تضيف، Column أو SizedBox، موجودة داخل مكون زي ListView لو الـ
+    
+    */
         scrollDirection: Axis.horizontal,
         itemCount: categoryModels.length,
         itemBuilder: (BuildContext context, int index) {

@@ -13,10 +13,12 @@ final String category;
 class _CategoryViewState extends State<CategoryView> {
   @override
   Widget build(BuildContext context) {
-    return CustomScrollView(
-      slivers: [
-        NewsListBuilder(category: widget.category),
-      ],
+    return Scaffold(
+      body: CustomScrollView(
+        slivers: [
+          NewsListBuilder(category: widget.category),
+        ],
+      ),
     );
   }
 }
